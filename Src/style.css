@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    width: 100%;
+    height: 100%;
+}
+
+.brand-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.lan-dropdown {
+    background: transparent;
+    border: none;
+    columns: white;
+    font-weight: 600;
+}
+
+.lan-dropdown:focus {
+    outline: none;
+}
+
+.lan-dropdown option {
+    background-color: white;
+}
+
+.dropdown-container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.signin-btn {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.navbar-nav-item {
+    display: flex;
+    gap: 10px;
+}
+
+.signin-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-bg-img-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.4) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%,
+    );
+}
+
+.hero-card {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.hero-subtile, .hero-description {
+    font-size: 1rem;
+}
+
+.hero-descipton {
+    margin: 0 50px;
+    padding: 15px 0;
+}
+
+.email-input {
+    border: none;
+    background: #5d5b5b58;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+    color: white;
+}
+
+.email-lable {
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: #e6e6e1;
+    transition: 0.5s;
+}
+
+.email-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-container {
+    background-color: transparent;
+    width: 60%;
+    height: 50px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.email-input:focus + .email-lable {
+    top: 0.2rem;
+    font-size: 10px;
+}
+
+.email-input:not(:placeholder-shown).email-input:not(:focus)+ .email-lable {
+    top: 0.2rem;
+    font-size: 10px;
+}
+
+.email-input:focus-visivle {
+    outline: none;
+}
+
+.primary-btn {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
+.primay-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.feature {
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+}
+
+.feature-details {
+    text-align: center;
+}
+
+.feature-details {
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.feature-sub-title {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.feature-img-container {
+    width: 100%;
+    position: relative;
+}
+
+.feature-img{
+    width: 100%;
+}
+
+.feature-bg-video-container{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+
+.feature-bg-video {
+    width: 100%;
+}
+
+.feature-2-poster-container {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 16rem;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 60px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+}
+
+.poster-container {
+    width: 20%;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.poster-deatils {
+    width: 60%;
+}
+
+.poster-details > h4 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.poster-deatils > h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63, 63, 246);
+}
+
+.download-gif-container {
+    width: 20%;
+    height: 100%;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-3-bg-video-container {
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+}
+
+.faq-accordian {
+    width: 80vw;
+}
+
+.faq-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+
+.faq-title:hover {
+    background-color: #565656;
+}
+
+.faq-visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.faq-visible > p {
+    margin: 1rem;
+}
+
+.faq-list-container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+}
+
+.faq-heading {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-get-started-email {
+    text-align: center;
+}
+
+.faq-get-started-email > h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+footer {
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-row-1 > h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #c7bfbf;
+}
+
+.footer-row-1 a {
+    color: #c7bfbf;
+}
+
+.footer-row-2 {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #c7bfbf;
+}
+
