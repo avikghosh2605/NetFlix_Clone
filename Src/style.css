@@ -389,3 +389,32 @@ ul a {
     color: #c7bfbf;
 }
 
+.footer-row-3 > .dropdown-container {
+    width: fit-content;
+    border: 1px solid #757575;
+    color: white;
+}
+
+.footer-row-3 > .dropdown-container > .lan-dropdown {
+    color: white;
+}
+
+.footer-row-4 {
+    color: white;
+}
+
+/* ...................media quary.................  */
+@media (min-width: 768px){
+    .hero-bg-img-container {
+        height: 100vh;
+    }
+
+    .hero-bf-overlay {
+        height: 100vh;
+    }
+
+    .hero-bg-overlay {
+        
+    }
+
+}
