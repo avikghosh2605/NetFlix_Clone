@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-brand {
-    width: 100%;
+    width: 100px;
     height: 100%;
 }
 
@@ -30,30 +30,29 @@ body {
     height: 100%;
 }
 
-.lan-dropdown {
+.language-drop-down {
     background: transparent;
     border: none;
-    columns: white;
+    color: white;
     font-weight: 600;
 }
 
-.lan-dropdown:focus {
+.language-drop-down:focus:focus {
     outline: none;
 }
 
-.lan-dropdown option {
+.language-drop-down option {
     background-color: white;
 }
 
 .dropdown-container {
     border: 1px solid white;
     padding: 0.4rem;
-    /* padding: 10px px; */
     border-radius: 4px;
-    background: rgba(127, 125, 125, 0.4);
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.signin-btn {
+.signin-button {
     background-color: #dc030f;
     border: 1px solid #dc030f;
     color: white;
@@ -67,17 +66,17 @@ body {
     gap: 10px;
 }
 
-.signin-btn a {
+.signin-button a {
     text-decoration: none;
     color: white;
 }
 
-.hero-bg-img-container {
+.hero-bg-image-container {
     width: 100%;
     height: 80vh;
 }
 
-.hero-bg-img {
+.hero-bg-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -115,7 +114,7 @@ body {
     font-size: 1rem;
 }
 
-.hero-descipton {
+.hero-description {
     margin: 0 50px;
     padding: 15px 0;
 }
@@ -134,11 +133,11 @@ body {
     position: absolute;
     top: 28%;
     left: 2%;
-    color: #e6e6e1;
+    color: #e6e1e1;
     transition: 0.5s;
 }
 
-.email-form-cointainer {
+.email-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,12 +154,12 @@ body {
     border-radius: 3px;
 }
 
-.email-input:focus + .email-lable {
+.email-input:focus + .email-label {
     top: 0.2rem;
     font-size: 10px;
 }
 
-.email-input:not(:placeholder-shown).email-input:not(:focus)+ .email-lable {
+.email-input:not(:placeholder-shown).email-input:not(:focus) + .email-lable {
     top: 0.2rem;
     font-size: 10px;
 }
@@ -169,7 +168,7 @@ body {
     outline: none;
 }
 
-.primary-btn {
+.primary-button {
     background-color: #dc030f;
     border: 1px solid #dc030f;
     color: white;
@@ -181,7 +180,7 @@ body {
     margin-left: 5px;
 }
 
-.primary-btn a {
+.primary-button a {
     text-decoration: none;
     color: white;
 }
@@ -206,16 +205,16 @@ body {
     font-weight: 400;
 }
 
-.feature-img-container {
+.feature-image-container {
     width: 100%;
     position: relative;
 }
 
-.feature-img{
+.feature-image {
     width: 100%;
 }
 
-.feature-bg-video-container {
+.feature-background-video-container {
     position: absolute;
     width: 100%;
     top: 20%;
@@ -226,7 +225,7 @@ body {
     z-index: -2;
 }
 
-.feature-bg-video {
+.feature-background-video {
     width: 100%;
 }
 
@@ -281,7 +280,7 @@ body {
     height: 100%;
 }
 
-.feature-3-bg-video-container {
+.feature-3-background-video-container {
     max-width: 63%;
     max-height: 47%;
     z-index: -2;
@@ -297,7 +296,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 25px 20px;
     font-size: 18px;
     background-color: #303030;
     border: 1px solid #303030;
@@ -392,7 +391,7 @@ ul a {
     color: white;
 }
 
-.footer-row-3 > .dropdown-container > .lan-dropdown {
+.footer-row-3 > .dropdown-container > .language-drop-down {
     color: white;
 }
 
@@ -403,7 +402,7 @@ ul a {
 /* ...................media quary.................  */
 /* ............................for 768px................  */
 @media (min-width: 768px){
-    .hero-bg-img-container {
+    .hero-bg-image-container {
         height: 100vh;
     }
 
@@ -421,7 +420,7 @@ ul a {
         font-size: 3rem;
     }
 
-    .hero-subtile, .hero-description {
+    .hero-subtitle, .hero-description {
         font-size: 1.3rem;
     }
 
@@ -492,7 +491,7 @@ ul a {
         width: 150px;
     }
 
-    .signin-btn {
+    .signin-button {
         padding: 10px 20px;
         font-size: 18px;
     }
@@ -521,7 +520,7 @@ ul a {
         gap: 1px;
     }
 
-    .primary-btn {
+    .primary-button {
         height: 50px;
     }
 
@@ -545,7 +544,7 @@ ul a {
         font-size: 25px;
     }
 
-    .feature-img-container {
+    .feature-image-container {
         max-width: 500px;
     }
 

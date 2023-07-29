@@ -1,13 +1,13 @@
- let accordin = document.getElementsByClassName("faq-title")
+ let accordian = document.getElementsByClassName("faq-title")
 
- for (let i =0; i < accordin.length; i++) {
-    accordin[i].addEventListener("click", function() {
+ for (let i =0; i < accordian.length; i++) {
+    accordian[i].addEventListener("click", function() {
         if (this.childNodes[1].classList.contains("fa-plus")) {
             this.childNodes[1].classList.remove("fa-plus");
             this.childNodes[1].classList.add("fa-xmark");
         } else {
-            this.childNodes[1].classList.remove("fa-plus");
-            this.childNodes[1].classList.add("fa-xmark"); 
+            this.childNodes[1].classList.remove("fa-xmark");
+            this.childNodes[1].classList.add("fa-plus"); 
         }
 
         let content = this.nextElementSibling;
