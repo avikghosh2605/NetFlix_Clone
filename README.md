@@ -1,3 +1,4 @@
-NetFlix_Clone
+NetFlix_Clone 
 
-URL: netfli-xclone.netlify.app
+URL: https://avikghosh2605.github.io/NetFlix_Clone/
+     netfli-xclone.netlify.app
