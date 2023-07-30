@@ -1,3 +1,3 @@
 NetFlix_Clone
 
-URL: 
+URL: netfli-xclone.netlify.app
